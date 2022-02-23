@@ -1,7 +1,12 @@
-import 'luas_pp.dart';
+import '../packages/luas_pp.dart';
 
 void main(List<String> arguments) {
-  persegiPanjang kotak1, kotak2;
+  encapsulationPP();
+}
+
+void encapsulationPP(){
+  print('========== encapsulationPP ==========');
+  persegiPanjang kotak1;
 
   kotak1 = persegiPanjang();
   kotak1.setPanjang(10);
@@ -13,4 +18,5 @@ void main(List<String> arguments) {
       '\nluas = ${kotak1.hitungLuas()}'
       '\nkeliling = ${kotak1.hitungKeliling()}'
   );
+  print('========== encapsulationPP ==========');
 }
