@@ -7,6 +7,8 @@ class Person {
   Person(this.name, this.address);
 
   // Named constructor allow object to have multiple constructor
-  Person.withName(this.name);
-  Person.withAddress(this.address);
+  // Add redirecting to default constructor
+  Person.withName(String name): this(name, 'No Address');
+  Person.withAddress(String address) : this('No Name', address);
+  Person.fromJakarta() : this.withAddress('Jakarta');
 }
