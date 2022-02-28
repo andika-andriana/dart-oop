@@ -1,4 +1,4 @@
-class persegiPanjang{
+class PersegiPanjang{
 
   // underscore tanda encapsulation dart;
   late int _panjang;
@@ -26,10 +26,6 @@ class persegiPanjang{
 
   int hitungLuas() {
     return _panjang * _lebar;
-  }
-
-  int hitungKeliling(){
-    return 2 * (_panjang *_lebar);
   }
 
 }
