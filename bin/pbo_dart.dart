@@ -5,20 +5,31 @@ import '../packages/person.dart';
 void main(List<String> arguments) {
 
   var person = Person('Andika', 'Jawa Barat');
+  var person1 = Person.withName('July');
+  var person2 = Person.withAddress('Latina');
 
   dividerPrint();
 
   print(person.name);
   print(person.address);
   print(person.country);
+  dividerPrint();
+  print(person1.name);
+  print(person1.address);
+  print(person1.country);
+  dividerPrint();
+  print(person2.name);
+  print(person2.address);
+  print(person2.country);
 
   dividerPrint();
 
   encapsulationPP();
 
+  dividerPrint();
 }
 
-void dividerPrint() => print('=== === === === ===');
+void dividerPrint() => print('\n<== === === === ==>\n');
 
 void encapsulationPP(){
   PersegiPanjang kotak1;
