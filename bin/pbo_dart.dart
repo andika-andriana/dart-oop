@@ -1,6 +1,7 @@
 import '../packages/luas_pp.dart';
 import '../packages/ext_luas_pp.dart';
 import '../packages/person.dart';
+import '../packages/customer.dart';
 
 void main(List<String> arguments) {
 
@@ -38,6 +39,14 @@ void main(List<String> arguments) {
   encapsulationPP();
 
   dividerPrint();
+
+  var customer = Customer("Andika Andriana");
+  print(customer.firstName);
+  print(customer.lastName);
+  print(customer.fullName);
+
+  dividerPrint();
+
 }
 
 void dividerPrint() => print('\n<== === === === ==>\n');
