@@ -53,7 +53,7 @@ void archiveFunc () {
   
   Divider.print('initializer list');
 
-  var customer = Customer("Andika Andriana");
+  var customer = Customer('Andika Andriana');
   print(customer.firstName);
   print(customer.lastName);
   print(customer.fullName);
