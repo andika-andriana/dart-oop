@@ -1,9 +1,24 @@
 import '../packages/luas_pp.dart';
 import '../packages/ext_luas_pp.dart';
+import '../packages/person.dart';
 
 void main(List<String> arguments) {
+
+  var person = Person('Andika', 'Jawa Barat');
+
+  dividerPrint();
+
+  print(person.name);
+  print(person.address);
+  print(person.country);
+
+  dividerPrint();
+
   encapsulationPP();
+
 }
+
+void dividerPrint() => print('=== === === === ===');
 
 void encapsulationPP(){
   PersegiPanjang kotak1;
