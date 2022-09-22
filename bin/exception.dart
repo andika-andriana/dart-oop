@@ -8,13 +8,13 @@
 
 class Validation {
   static void validate(String username, String password){
-    if(username == "") throw Exception("Username is blank");
-    else if(password == "") throw Exception("Password is blank");
-    else print("Successfully login");
+    if(username == '') throw Exception('Username is blank');
+    else if(password == '') throw Exception('Password is blank');
+    else print('Successfully login');
   }
 }
 
 void main(){
-  Validation.validate("username", "password");
-  print("Successfully running main");
+  Validation.validate('username', 'password');
+  print('Successfully running main');
 }
